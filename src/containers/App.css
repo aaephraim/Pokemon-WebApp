@@ -1,0 +1,32 @@
+.container{
+    /* width: 80%; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+    width: 100%;
+    height: max-content;
+    
+    /* border: 1px solid white; */
+    
+    
+}
+.title .logo {
+    display: block;
+    margin: auto;
+    width: 50rem;
+    height: 30rem;
+    margin-top: 1px;
+    cursor: pointer;
+    
+ }
+ .extended-Card{
+    height: 40rem;
+    width: 30rem;
+    border: 1px solid black;
+ }

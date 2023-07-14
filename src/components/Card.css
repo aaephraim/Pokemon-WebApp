@@ -1,0 +1,152 @@
+.card-container{
+    display: flex;
+    padding: 2em 1em;
+}
+
+.card {
+    /* border : 1px solid black; */
+    
+    /* height: 38rem; */
+    min-height: 20em;
+    width: 23rem;
+    margin: 0 2em;
+    padding: 1em 1em;
+    background: linear-gradient( to bottom, rgb(63, 63, 173), rgb(233, 219, 139), rgb(255, 181, 194));
+    border-radius: 20px;
+    border: 5px solid #ffd900;
+    transition: all 0.3s linear ;
+    cursor: pointer;
+    
+    
+}
+.card:hover{
+    border: 5px solid #2F58CD;
+    transform: scale(1.03);
+}
+
+
+
+.main-display{
+    width: 100%;
+    height:52%;
+    position: relative;
+    
+}
+
+.top-line {
+    display: flex;
+    
+    font-weight: 500;
+}
+
+.top-line .hp, .exp {
+    border:1px solid #F3F8FF;
+    color: #F3F8FF;
+    width: max-content;
+    font-size: 1em;
+    margin: 0;
+    height: 1.5em;
+    padding: 5px;
+    border-radius: 25px
+}
+
+.top-line .exp {
+    
+    margin-left: auto;
+
+}
+.name strong{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+.main-display img{
+    /* border: 1px solid black; */
+    display: block;
+    max-width: 13rem;
+    max-height: 13rem;
+    margin: 1em auto 0 ;
+    
+    
+    
+}
+
+
+.main-display .name{
+    text-align: center;
+}
+
+
+.types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    /* border: 1px solid red; */
+    margin-top: 3em;
+    
+}
+.types span{
+    padding: 3px 1rem;
+    width: max-content;
+    text-align: center;
+    height: max-content;
+    font-weight: 500;
+    margin: 0 auto;
+    text-decoration: underline;
+    border-radius: 25px;
+    border: 2px solid #A0BFE0;
+    background-color: #B4E4FF;
+}
+
+.abilities{
+    display: block;
+    width: 100%;
+    height: 8em;
+    color:#735F32;
+    /* border:1px solid green; */
+    line-height: 0;
+    text-align: center;
+    margin: 4em auto 0;
+}
+.abilities span{
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    width: 100%;
+    height: 2em;
+    justify-content:space-around;
+
+}
+
+.stats {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 4rem;
+    /* margin-top: 1em; */
+    /* border: 1px solid black; */
+    line-height: 1px;
+    position: relative;
+    /* color: #624F82; */
+    color:#008080;
+    
+
+    
+    
+}
+
+.stats h3{
+    text-align: center;
+    
+}
+
+.stats p{
+    font-weight: 500;
+}
+
+
