@@ -1,3 +1,11 @@
+.docker{
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+    width: auto;
+}
+
+
 .container{
     /* width: 80%; */
     display: flex;
@@ -17,10 +25,10 @@
     
 }
 .title .logo {
-    display: block;
+    display: flex;
     margin: auto;
-    width: 50rem;
-    height: 30rem;
+    width:42vw;
+    height: 40vh;
     margin-top: 1px;
     cursor: pointer;
     

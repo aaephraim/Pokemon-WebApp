@@ -120,17 +120,10 @@ class App extends Component {
       .filter((elem) => {
         return elem.name.toLowerCase().includes(searchField.toLowerCase());
       });
-    // console.log(unique, "unique");
-    // const finalPokedex = pokedex_filtered.toSorted((a, b) => (a.id > b.id ? 1 : -1));
-    // const query = pokedex_filtered.map(pokay => {
-    //   return pokay.name.toLowerCase().includes(searchField.toLowerCase());
-    // })
-
-    // console.log(pokedex_filtered, "filtered");
-    // console.log(searched, "searched")
 
     return (
       <>
+      <div className="docker">
         <div className="title">
           <img
             className="logo"
@@ -163,9 +156,7 @@ class App extends Component {
                 types={item.types}
                 abilities={item.abilities}
                 
-                // poke={pokedex_filtered}
-                // loading={loading}
-                // clickFunc={this.detail}
+               
               />
               );
             })
@@ -175,7 +166,7 @@ class App extends Component {
             <SearchedCard
               query={searched}
               loading={loading}
-              // clickFunc={this.detail}
+             
             />
           ) : (
             ""
@@ -184,12 +175,13 @@ class App extends Component {
             <GeneratedCard
               random={generated}
               loading={loading}
-              // clickFunc={this.detail}
+             
             />
           ) : (
             ""
           )}
         </div>
+      </div>
       </>
     );
   }
